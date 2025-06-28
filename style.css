@@ -1,14 +1,18 @@
-/* الخلفية من mans.png */
+/* الخط الأساسي */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('mans.png') no-repeat center center fixed;
-  background-size: cover;
   direction: rtl;
   position: relative;
 }
 
-/* شعار الجامعة mans5.png */
+/* الخلفية تظهر فقط في الصفحة الأساسية */
+body.with-bg {
+  background: url('mans.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* شعار الجامعة mans5.png في الأعلى يمين */
 .logo-top-right {
   position: absolute;
   top: 15px;
@@ -85,7 +89,7 @@ body {
   cursor: pointer;
 }
 
-/* وميض زر الدخول */
+/* وميض الزر */
 .blinking {
   animation: blink 1s infinite;
 }
@@ -96,7 +100,7 @@ body {
   100% { opacity: 1; }
 }
 
-/* الروابط السفلية */
+/* الفوتر */
 .login-footer {
   margin-top: 20px;
   font-size: 13px;
