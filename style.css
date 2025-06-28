@@ -201,13 +201,21 @@ body.with-bg {
   min-height: 100vh;
 }
 
+/* اللوجو */
+.result-container .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100px; /* حجم مصغر */
+  height: auto;
+}
+
 /* العناوين */
 .result-container .title {
   color: #000;
   text-align: center;
 }
 
-/* معلومات الطالب (الاسم - الشعبة - الفرقة) */
+/* معلومات الطالب */
 .result-container .student-info {
   text-align: right;
   margin: 20px 40px;
