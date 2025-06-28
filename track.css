@@ -1,0 +1,16 @@
+.track-container {
+  background-color: #1d1d1f;
+  padding: 20px;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+.track-container h2,
+.track-container h3 {
+  margin: 10px 0;
+}
+.track-result {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #00e676;
+}
