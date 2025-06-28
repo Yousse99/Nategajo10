@@ -1,11 +1,13 @@
+/* خلفية الصفحة */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('bg.jpg') no-repeat center center fixed;
+  background: url('mans5.png') no-repeat center center fixed;
   background-size: cover;
   direction: rtl;
 }
 
+/* كارت تسجيل الدخول */
 .login-card {
   background-color: rgba(0, 0, 0, 0.75);
   width: 90%;
@@ -17,16 +19,19 @@ body {
   color: white;
 }
 
-.logo {
-  width: 100px;
-  margin-bottom: 10px;
+/* شعار الجامعة */
+.logo-small {
+  width: 60px;
+  margin-bottom: 5px;
 }
 
+/* شعار MyU */
 .myu-logo-img {
   width: 120px;
   margin: 10px 0;
 }
 
+/* عنوان النظام */
 .system-title {
   font-size: 15px;
   margin-bottom: 20px;
@@ -34,6 +39,7 @@ body {
   color: #ccc;
 }
 
+/* مدخلات */
 .input-box {
   display: flex;
   align-items: center;
@@ -57,12 +63,14 @@ body {
   direction: rtl;
 }
 
+/* تذكرني */
 .remember-row {
   text-align: right;
   margin-bottom: 15px;
   font-size: 14px;
 }
 
+/* زر الدخول */
 .login-btn {
   background-color: #2196F3;
   color: white;
@@ -85,6 +93,7 @@ body {
   100% { opacity: 1; }
 }
 
+/* الفوتر */
 .login-footer {
   margin-top: 20px;
   font-size: 13px;
@@ -109,7 +118,6 @@ body {
 .privacy-link {
   color: #f44336;
 }
-
 /* صفحة الأيقونات */
 .icons-container {
   background-color: #1d1d1f;
