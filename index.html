@@ -7,23 +7,21 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body id="loginPage">
+<body>
 
-  <!-- لوجو الجامعة (فوق يمين الشاشة) -->
-  <img src="mans5.png" class="top-logo" alt="شعار الجامعة" />
+  <!-- شعار الجامعة - صغير في أعلى يمين الصفحة -->
+  <img src="mans5.png" class="logo-top-right" alt="شعار الجامعة" />
 
   <!-- كارت تسجيل الدخول -->
   <div class="login-card">
-    <!-- شعار MyU فوق الكارت -->
+    <!-- شعار MyU -->
     <img src="mans6.png" class="myu-logo-img" alt="شعار MyU" />
 
-    <!-- عنوان النظام -->
     <p class="system-title">
       بوابة الخدمات الطلابية<br />
       <span>نظام ابن الهيثم - جامعة المنصورة</span>
     </p>
 
-    <!-- نموذج تسجيل الدخول -->
     <form onsubmit="return login()">
       <div class="input-box">
         <i class="fas fa-user"></i>
@@ -40,7 +38,6 @@
       <button class="login-btn blinking" type="submit">تسجيل الدخول</button>
     </form>
 
-    <!-- الروابط السفلية -->
     <div class="login-footer">
       <a href="#" onclick="alert('يرجى التوجه لشئون الطلاب.')"><i class="fas fa-key"></i> نسيت كلمة المرور</a>
       <a href="#" class="privacy-link"><i class="fas fa-shield-alt"></i> سياسة خصوصية وتأمين البيانات</a>
@@ -48,7 +45,6 @@
     </div>
   </div>
 
-  <!-- JavaScript -->
   <script>
     function login() {
       const user = document.getElementById('username').value;
