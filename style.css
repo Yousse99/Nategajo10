@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  color: #fff;
+}
+
+/* خلفية صفحة تسجيل الدخول فقط */
+#loginPage {
+  background-image: url('mans.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* كارت تسجيل الدخول */
+.login-card {
+  background-color: rgba(46, 46, 48, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.logo-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.my {
+  color: #00bcd4;
+  font-weight: bold;
+}
+.u {
+  color: #f44336;
+  font-weight: bold;
+}
+.system-title {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.input-box {
+  background-color: #3b3b3d;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.input-box i {
+  color: #aaa;
+  margin-left: 10px;
+}
+.input-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.remember-row {
+  text-align: right;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.login-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.login-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+.login-footer a {
+  color: #f88;
+  text-decoration: none;
+}
+.lang-switch {
+  color: #aaa;
+}
+
+/* صفحة الأيقونات */
+.icons-container {
+  background-color: #1d1d1f;
+  min-height: 100vh;
+}
+.top-bar {
+  background-color: #2c2c2e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.actions i, .actions span {
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.title {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.tile {
+  background-color: #f5f5f5;
+  color: #e53935;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+.tile i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+.tile:hover {
+  background-color: #eee;
+  transform: translateY(-3px);
+}
+
+/* صفحة النتيجة */
+.result-container {
+  background-color: #1d1d1f;
+  padding: 20px;
+  min-height: 100vh;
+}
+.result-container .title {
+  color: #fff;
+}
+.result-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #fff;
+}
+th {
+  background-color: #333;
+  color: #fff;
+}
+.grade-pass { color: #4CAF50; }
+.grade-good { color: #2196F3; }
+.grade-very-good { color: #FF9800; }
+.grade-excellent { color: #00e676; }
+.grade-fail { color: #F44336; }
+
+/* زر الطباعة */
+.print-btn {
+  margin: 20px auto;
+  display: block;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media print {
+  .print-btn { display: none; }
+}

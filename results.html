@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نتيجة الطالب</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .print-btn {
+      margin: 20px auto;
+      display: block;
+      background-color: #00c853;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    @media print {
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body class="result-container">
+  <img src="mans5.png" class="logo" alt="شعار الجامعة">
+  <h2 class="title">كلية التجارة - انتظام</h2>
+  <p class="system-title">العام الدراسي: 2024-2025</p>
+  <h1 class="title">نتيجة الطالب</h1>
+  <h3 class="title">الاسم: يوسف محمد العوضي متولي السكري</h3>
+  <h3 class="title">الشعبة: محاسبة وإدارة أعمال</h3>
+  <h3 class="title">المستوى: الثالث</h3>  <h2 class="title">الفصل الدراسي الأول</h2>
+  <table>
+    <tr><th>المقرر</th><th>الدرجة</th><th>التقدير</th></tr>
+    <tr><td>أصول التكاليف (1)</td><td>13</td><td class="grade-good">جيد</td></tr>
+    <tr><td>المحاسبة الحكومية والقومية (1)</td><td>15</td><td class="grade-very-good">جيد جدا</td></tr>
+    <tr><td>أصول المراجعة</td><td>14</td><td class="grade-good">جيد</td></tr>
+    <tr><td>إدارة المنشآت المالية</td><td>13</td><td class="grade-good">جيد</td></tr>
+    <tr><td>إدارة المشتريات والمخازن</td><td>16</td><td class="grade-very-good">جيد جدا</td></tr>
+    <tr><td>التنمية والتخطيط الاقتصادي</td><td>13</td><td class="grade-good">جيد</td></tr>
+    <tr><td>التأمين ورياضياته</td><td>14</td><td class="grade-good">جيد</td></tr>
+    <tr><td>الإحصاء التطبيقي وبحوث العمليات</td><td>17</td><td class="grade-very-good">جيد جدا</td></tr>
+    <tr><td>دراسات تجارية باللغة الإنجليزية (3)</td><td>11</td><td class="grade-pass">مقبول</td></tr>
+  </table>  <h2 class="title">الفصل الدراسي الثاني</h2>
+  <table>
+    <tr><th>المقرر</th><th>الدرجة</th><th>التقدير</th></tr>
+    <tr><td>أصول التكاليف (2)</td><td>14</td><td class="grade-good">جيد</td></tr>
+    <tr><td>المحاسبة الحكومية والقومية (2)</td><td>13</td><td class="grade-good">جيد</td></tr>
+    <tr><td>اقتصاديات المالية العامة والنظم الضريبية</td><td>12</td><td class="grade-good">جيد</td></tr>
+    <tr><td>إدارة المنشآت المالية (استمرار)</td><td>16</td><td class="grade-very-good">جيد جدا</td></tr>
+    <tr><td>الإحصاء التطبيقي وبحوث العمليات (استكمال)</td><td>15</td><td class="grade-very-good">جيد جدا</td></tr>
+    <tr><td>دراسات تجارية باللغة الإنجليزية (3)</td><td>13</td><td class="grade-good">جيد</td></tr>
+  </table>  <h2 class="title">النتيجة الكلية: جيد</h2>
+  <h3 class="title">GPA: 2.7</h3><button class="print-btn" onclick="window.print()">طباعة النتيجة</button>
+
+</body>
+</html>
