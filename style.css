@@ -1,34 +1,38 @@
-/* خلفية الصفحة */
+/* الخلفية من mans.png */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('mans5.png') no-repeat center center fixed;
+  background: url('mans.png') no-repeat center center fixed;
   background-size: cover;
   direction: rtl;
+  position: relative;
 }
 
-/* كارت تسجيل الدخول */
+/* لوجو الجامعة (أعلى يمين الشاشة) */
+.top-logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 60px;
+  z-index: 999;
+}
+
+/* الكارت */
 .login-card {
   background-color: rgba(0, 0, 0, 0.75);
   width: 90%;
   max-width: 400px;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 30px 20px;
   border-radius: 15px;
   text-align: center;
   color: white;
 }
 
-/* شعار الجامعة */
-.logo-small {
-  width: 60px;
-  margin-bottom: 5px;
-}
-
-/* شعار MyU */
+/* لوجو MyU */
 .myu-logo-img {
   width: 120px;
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 
 /* عنوان النظام */
@@ -63,7 +67,6 @@ body {
   direction: rtl;
 }
 
-/* تذكرني */
 .remember-row {
   text-align: right;
   margin-bottom: 15px;
@@ -93,7 +96,7 @@ body {
   100% { opacity: 1; }
 }
 
-/* الفوتر */
+/* الروابط السفلية */
 .login-footer {
   margin-top: 20px;
   font-size: 13px;
