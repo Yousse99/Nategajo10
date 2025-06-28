@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="icons-container">
+
   <div class="top-bar">
     <img src="mans5.png" class="profile-img" alt="User">
     <div class="actions">
@@ -15,38 +16,51 @@
     </div>
   </div>
 
+  <div class="date-today">
+    <script>
+      const today = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+      document.write(today.toLocaleDateString('ar-EG', options));
+    </script>
+  </div>
+
   <h2 class="title">بوابة الخدمات الطلابية</h2>
 
   <div class="grid">
+    <div class="tile"><i class="fas fa-syringe"></i><span>بيانات اللقاح</span></div>
+
     <div class="tile" onclick="window.location.href='results.html'">
-      <i class="fas fa-poll"></i>
-      <span>النتائج</span>
+      <i class="fas fa-poll"></i><span>النتائج الدراسية</span>
     </div>
+
+    <div class="tile"><i class="fas fa-id-card"></i><span>البيانات الشخصية</span></div>
+
+    <div class="tile"><i class="fas fa-shield-alt"></i><span>التربية العسكرية</span></div>
+
+    <div class="tile"><i class="fas fa-money-bill-wave"></i><span>الرسوم</span></div>
+
+    <div class="tile"><i class="fas fa-at"></i><span>بريد الجامعة</span></div>
 
     <div class="tile" onclick="window.location.href='track.html'">
-      <i class="fas fa-code-branch"></i>
-      <span>رغبات التشعيب</span>
+      <i class="fas fa-code-branch"></i><span>رغبات التشعيب</span>
     </div>
 
-    <div class="tile">
-      <i class="fas fa-book"></i>
-      <span>مقرراتي</span>
-    </div>
+    <div class="tile"><i class="fas fa-question"></i><span>استبيان</span></div>
 
-    <div class="tile">
-      <i class="fas fa-file-invoice"></i>
-      <span>مقررات اختيارية</span>
-    </div>
+    <div class="tile"><i class="fas fa-id-badge"></i><span>البطاقات التعريفية</span></div>
 
-    <div class="tile">
-      <i class="fas fa-at"></i>
-      <span>بريد الجامعة</span>
-    </div>
+    <div class="tile"><i class="fas fa-book"></i><span>مقرراتي</span></div>
 
-    <div class="tile">
-      <i class="fas fa-ellipsis-h"></i>
-      <span>الخدمات</span>
-    </div>
+    <div class="tile"><i class="fas fa-image"></i><span>رفع الصورة الشخصية</span></div>
+
+    <div class="tile"><i class="fas fa-file-invoice"></i><span>مقررات اختيارية</span></div>
+
+    <div class="tile"><i class="fas fa-ellipsis-h"></i><span>خدمات</span></div>
+
+    <div class="tile"><i class="fas fa-hospital"></i><span>مستشفى الطلبة</span></div>
+
+    <div class="tile"><i class="fas fa-calendar-alt"></i><span>الجداول</span></div>
   </div>
+
 </body>
 </html>
