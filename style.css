@@ -1,8 +1,114 @@
-body { margin: 0; font-family: 'Tahoma', sans-serif; color: #fff; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  direction: rtl;
+}
 
-/* صفحة تسجيل الدخول */ #loginPage { background-image: url('mans.png'); background-size: cover; background-position: center; min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+.login-card {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
 
-.login-card { background-color: rgba(46, 46, 48, 0.9); padding: 30px; border-radius: 15px; text-align: center; width: 90%; max-width: 400px; box-shadow: 0 0 15px rgba(0,0,0,0.5); } .logo { width: 80px; height: auto; margin-bottom: 10px; } .logo-text { font-size: 36px; margin-bottom: 10px; } .my { color: #00bcd4; font-weight: bold; } .u { color: #f44336; font-weight: bold; } .system-title { color: #ccc; font-size: 14px; margin-bottom: 20px; } .input-box { background-color: #3b3b3d; display: flex; align-items: center; border-radius: 6px; margin: 10px 0; padding: 10px; } .input-box i { color: #aaa; margin-left: 10px; } .input-box input { flex: 1; background: transparent; border: none; outline: none; color: #fff; } .remember-row { text-align: right; font-size: 14px; margin: 10px 0; } .login-btn { background-color: #f44336; color: #fff; border: none; width: 100%; padding: 10px; font-size: 16px; border-radius: 6px; cursor: pointer; } .login-footer { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; } .login-footer a { color: #f88; text-decoration: none; } .lang-switch { color: #aaa; }
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.myu-logo-img {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.system-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.input-box i {
+  color: #666;
+  margin-left: 10px;
+}
+
+.input-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  direction: rtl;
+}
+
+.remember-row {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* تأثير وميض */
+.blinking {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.lang-switch {
+  color: #ccc;
+}
+
+.privacy-link {
+  color: #f44336;
+}
 
 /* صفحة الأيقونات */
 .icons-container {
