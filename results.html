@@ -18,24 +18,21 @@
       cursor: pointer;
     }
 
-    /* العناصر التي كانت في المنتصف */
-    .student-info {
-      text-align: right;
-      margin-right: 40px;
-    }
-
     @media print {
       .print-btn { display: none; }
     }
   </style>
 </head>
 <body class="result-container">
-  <img src="mans5.png" class="logo" alt="شعار الجامعة">
-  <h2 class="title" style="text-align: center;">كلية التجارة - انتظام</h2>
-  <p class="system-title" style="text-align: center;">العام الدراسي: 2024-2025</p>
-  <h1 class="title" style="text-align: center;">نتيجة الطالب</h1>
 
-  <!-- معلومات الطالب -->
+  <!-- شعار الجامعة بعد تصغيره -->
+  <img src="mans5.png" class="logo" alt="شعار الجامعة">
+
+  <h2 class="title">كلية التجارة - انتظام</h2>
+  <p class="system-title">العام الدراسي: 2024-2025</p>
+  <h1 class="title">نتيجة الطالب</h1>
+
+  <!-- بيانات الطالب -->
   <div class="student-info">
     <h3>الاسم: يوسف محمد العوضي متولي السكري</h3>
     <h3>الشعبة: محاسبة وإدارة أعمال</h3>
@@ -69,6 +66,8 @@
 
   <h2 class="title">النتيجة الكلية: جيد</h2>
   <h3 class="title">GPA: 2.7</h3>
+
   <button class="print-btn" onclick="window.print()">طباعة النتيجة</button>
+
 </body>
 </html>
