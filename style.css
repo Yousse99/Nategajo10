@@ -178,7 +178,54 @@ body {
   transform: translateY(-3px);
 }
 
-/* صفحة النتيجة */ .result-container { background-color: #fff; color: #000; padding: 20px; min-height: 100vh; } .result-container .title { color: #000; } .result-container table { width: 100%; border-collapse: collapse; margin-top: 20px; } th, td { padding: 10px; border: 1px solid #999; text-align: center; color: #000; } th { background-color: #ddd; color: #000; } .grade-pass, .grade-good, .grade-very-good, .grade-excellent, .grade-fail { color: #000; }
+/* صفحة النتيجة */
+.result-container {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* العناوين */
+.result-container .title {
+  color: #000;
+  text-align: center;
+}
+
+/* معلومات الطالب (الاسم - الشعبة - الفرقة) */
+.result-container .student-info {
+  text-align: right;
+  margin: 20px 40px;
+  line-height: 1.8;
+}
+
+/* الجدول */
+.result-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #999;
+  text-align: center;
+  color: #000;
+}
+
+th {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* التقديرات */
+.grade-pass,
+.grade-good,
+.grade-very-good,
+.grade-excellent,
+.grade-fail {
+  color: #000;
+}
 
 /* زر الطباعة */ .print-btn { margin: 20px auto; display: block; background-color: #00c853; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px; cursor: pointer; } @media print { .print-btn { display: none; } }
 
